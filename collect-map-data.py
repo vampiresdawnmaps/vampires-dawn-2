@@ -129,7 +129,7 @@ for i, (map_id, map) in enumerate(map_data.items()):
 			map['events'].append({'x': x, 'y': y})
 
 
-json = json.dumps(map_data, indent=4)		
+json = json.dumps(map_data)		
 
 outfilename = os.path.join(os.path.dirname(__file__), 'out', 'html', 'map-data.js')
 with open(outfilename, 'w', encoding='utf-8') as outfile:
