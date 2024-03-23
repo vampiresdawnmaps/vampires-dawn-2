@@ -4,6 +4,8 @@ This repository contains an interactive map for the game Vampires Dawn II - Anci
 
 The map has been built using the awesome [Leaflet](https://leafletjs.com) library.
 
+**Open map at https://vampiresdawnmaps.github.io/vampires-dawn-2**
+
 ## Map Features
 * Interactive and navigatable map for each area of the game, starting on the game's world map
 * Map markers for transitions to other areas (use the link in the marker's popup)
