@@ -6,7 +6,7 @@ temp_dir = os.path.join(os.path.dirname(__file__), 'temp')
 
 
 map_data = {}
-with open(os.path.join(temp_dir, 'map-tree.dot')) as file_in:
+with open(os.path.join(temp_dir, 'map-tree.dot'), encoding='utf8') as file_in:
 	for line in file_in:
 		m = re.match(r'(\d+) \[label=\"([^\"]+)\"', line)
 		if m:
