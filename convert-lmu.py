@@ -29,10 +29,10 @@ for file in os.listdir(work_dir):
 
 print('Number of maps found: ', len(lmu_files))
 
-image_dir = os.path.join(os.path.dirname(__file__), 'out', 'html', 'images')
+image_dir = os.path.join(os.path.dirname(__file__), 'docs', 'images')
 os.makedirs(image_dir, exist_ok=True)
 
-temp_dir =  os.path.join(os.path.dirname(__file__), 'out', 'temp')
+temp_dir =  os.path.join(os.path.dirname(__file__), 'temp')
 os.makedirs(temp_dir, exist_ok=True)
 
 subprocess.run([lcf2xml, ldb_file], capture_output=True, check=True)

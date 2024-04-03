@@ -11,6 +11,6 @@ if not os.path.isfile(os.path.join(work_dir, 'RPG_RT.ldb')):
 	print('This script must be executed inside the game directory (containing \'RPG_RT.ldb\').')
 	sys.exit(1)
 
-dot_file = os.path.join(os.path.dirname(__file__), 'out', 'temp', 'map-tree.dot')
+dot_file = os.path.join(os.path.dirname(__file__), 'temp', 'map-tree.dot')
 subprocess.run([lcfviz, '-o', dot_file], capture_output=True, check=True)
 print(f'Saved map tree to: {dot_file}')
